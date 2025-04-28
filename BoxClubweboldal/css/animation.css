@@ -1,0 +1,107 @@
+/* Alap beállítás a sectionre */
+section {
+  min-height: 80vh;
+  position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+/* Boxer karakter */
+.boxer {
+  position: relative;
+  width: 140px;
+  height: 320px;
+}
+
+/* Fej */
+.head {
+  width: 70px;
+  height: 70px;
+  background-color: #ffcc99; /* világos bőrszín */
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+}
+
+/* Nyak */
+.neck {
+  width: 20px;
+  height: 10px;
+  background-color: #ffcc99;
+  margin: 0 auto;
+}
+
+/* Törzs (vállszélesebb) */
+.torso {
+  width: 50px;
+  height: 100px;
+  background-color: #2c3e50; /* sötét póló */
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Karok */
+.arm {
+  width: 20px;
+  height: 90px;
+  background-color: #e74c3c; /* kar */
+  position: absolute;
+  top: 80px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Bal kar (statikus) */
+.arm-left {
+  left: 0;
+}
+
+/* Jobb kar (ütőkar animációval) */
+.arm-right {
+  right: 0;
+  transform-origin: top center;
+  animation: punch 1s infinite alternate ease-in-out;
+}
+
+/* Kesztyűk */
+.glove {
+  width: 35px;
+  height: 35px;
+  background-color: red;
+  border-radius: 50%;
+  margin-bottom: -8px;
+  box-shadow: 0 0 5px #900;
+}
+
+/* Lábak */
+.leg {
+  width: 18px;
+  height: 90px;
+  background-color: #2c3e50; /* nadrág szín */
+  position: absolute;
+  top: 190px;
+  border-radius: 10px;
+}
+
+/* Bal láb */
+.leg-left {
+  left: 30px;
+}
+
+/* Jobb láb */
+.leg-right {
+  right: 30px;
+}
+
+/* Ütés animáció */
+@keyframes punch {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-40deg) translateX(15px);
+  }
+}

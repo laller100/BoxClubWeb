@@ -1,0 +1,42 @@
+.gallery {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 100px 0;
+}
+
+.gallery::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gallery img {
+    width: 100%;
+    border: 1px solid #bbb;
+    transition: opacity 300ms ease-in-out;
+    opacity: 0.7;
+}
+
+.gallery img:hover {
+    border: 1px solid black;
+    opacity: 1.0;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure.item {
+    text-align: center;
+}
+
+.caption {
+    display: block;
+    font-style: italic;
+    font-size: 0.9em;
+}

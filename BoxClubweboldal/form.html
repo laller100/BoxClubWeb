@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohos Lajos">
+    <meta name="description" content="Box">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <title>Űrlap</title>
+  </head>
+  <body>
+    <nav>
+      <ul id="navigation">
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="animation.html">Animáció</a></li>
+        <li><a href="form.html">Űrlap</a></li>
+        <li><a href="table.html">Táblázat</a></li>
+        <li><a href="video.html">Videó</a></li>
+        <li><a href="gallery.html">Galéria</a></li>
+      </ul>
+    </nav>
+    <div id="container">
+      <section>
+        <form class="boxing-form">
+          
+          <label for="name">Név:</label>
+          <input type="text" id="name" name="name" placeholder="Írd be a neved" required>
+    
+          <label for="age">Életkor:</label>
+          <input type="number" id="age" name="age" min="8" max="99" placeholder="Életkorod" required>
+    
+          <label for="weight">Súlycsoport (kg):</label>
+          <input type="text" id="weight" name="weight" placeholder="Pl.: 75" required>
+    
+          <label for="experience">Tapasztalat:</label>
+          <select id="experience" name="experience" required>
+            <option value="">-- Válassz --</option>
+            <option value="kezdő">Kezdő</option>
+            <option value="haladó">Haladó</option>
+            <option value="profi">Profi</option>
+          </select>
+    
+          <label for="message">Megjegyzés:</label>
+          <textarea id="message" name="message" placeholder="Írj valamit magadról..."></textarea>
+    
+          <button type="submit">Jelentkezem!</button>
+    
+        </form>
+      </section>
+    </div>
+    <footer><p style="text-align: center; margin-top: 5px; color: white;">Copyright © 2025 | Mohos Lajos</p></footer>
+  </body>
+</html>
